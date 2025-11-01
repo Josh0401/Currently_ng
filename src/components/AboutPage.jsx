@@ -105,11 +105,10 @@ const CurrentlyAboutPage = () => {
       {/* Hero Section */}
       <section className="bg-white py-16 pt-20 mt-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h1 style={{ lineHeight: '150%' }} className="text-4xl md:text-5xl font-bold text-black mb-6">
-  Illuminating Nigeria's Political Landscape<br />
-  One Insight at a Time
-</h1>
-
+          <h1 style={{ lineHeight: '150%' }} className="text-4xl md:text-5xl font-bold text-black mb-6">
+            Illuminating Nigeria's Political Landscape<br />
+            One Insight at a Time
+          </h1>
           
           {/* Placeholder for visual content */}
           <div className="max-w-4xl mx-auto mb-8">
@@ -189,39 +188,32 @@ const CurrentlyAboutPage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-black mb-12 text-center">Meet the Team</h2>
           
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="flex flex-col gap-8 sm:flex-row sm:overflow-x-scroll xl:grid xl:grid-cols-3 xl:overflow-x-visible" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none', WebkitOverflowScrolling: 'touch' }}>
             {/* Team Member 1 */}
-            <div className="flex flex-wrap text-center gap-8">
-            <div style={{width: '353px', height: '420px'}} className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+            <div className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow flex-shrink-0 mx-auto sm:mx-0" style={{width: '353px', height: '420px', minWidth: '353px'}}>
               <div style={{height: '330px', backgroundColor: '#d1d5db', width: '100%'}}></div>
-              <div style={{height: '123.57px', padding: '16px'}}>
-              <h3 className="font-semibold text-lg text-black mb-2">Figure's Name</h3>
-              <p className="text-gray-600 text-sm">Title</p>
+              <div style={{height: '90px', padding: '16px'}} className="text-center">
+                <h3 className="font-semibold text-lg text-black mb-2">Figure's Name</h3>
+                <p className="text-gray-600 text-sm">Title</p>
               </div>
             </div>
-            </div>
-          
             
             {/* Team Member 2 */}
-            <div className="flex flex-wrap text-center gap-8">
-            <div style={{width: '353px', height: '420px'}} className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+            <div className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow flex-shrink-0 mx-auto sm:mx-0" style={{width: '353px', height: '420px', minWidth: '353px'}}>
               <div style={{height: '330px', backgroundColor: '#d1d5db', width: '100%'}}></div>
-              <div style={{height: '123.57px', padding: '16px'}}>
-              <h3 className="font-semibold text-lg text-black mb-2">Figure's Name</h3>
-              <p className="text-gray-600 text-sm">Title</p>
+              <div style={{height: '90px', padding: '16px'}} className="text-center">
+                <h3 className="font-semibold text-lg text-black mb-2">Figure's Name</h3>
+                <p className="text-gray-600 text-sm">Title</p>
               </div>
-            </div>
             </div>
             
             {/* Team Member 3 */}
-            <div className="flex flex-wrap text-center gap-8">
-            <div style={{width: '353px', height: '420px'}} className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+            <div className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow flex-shrink-0 mx-auto sm:mx-0" style={{width: '353px', height: '420px', minWidth: '353px'}}>
               <div style={{height: '330px', backgroundColor: '#d1d5db', width: '100%'}}></div>
-              <div style={{height: '123.57px', padding: '16px'}}>
-              <h3 className="font-semibold text-lg text-black mb-2">Figure's Name</h3>
-              <p className="text-gray-600 text-sm">Title</p>
+              <div style={{height: '90px', padding: '16px'}} className="text-center">
+                <h3 className="font-semibold text-lg text-black mb-2">Figure's Name</h3>
+                <p className="text-gray-600 text-sm">Title</p>
               </div>
-            </div>
             </div>
           </div>
         </div>

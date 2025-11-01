@@ -160,33 +160,24 @@ const CurrentlyHomepage = () => {
             <a href="#" className="text-green-600 hover:text-black transition-colors no-underline text-sm sm:text-base">See all</a>
           </div>
           
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-          <div className="relative group cursor-pointer w-full max-w-[353px] mx-auto" style={{ height: '391.31px' }}>
+          <div className="flex flex-col gap-6 md:gap-8 sm:flex-row sm:overflow-x-scroll xl:grid xl:grid-cols-3 xl:overflow-x-visible" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none', WebkitOverflowScrolling: 'touch' }}>
+            <div className="relative group cursor-pointer flex-shrink-0 mx-auto sm:mx-0" style={{ width: '353px', height: '391.31px', minWidth: '353px' }}>
               <img src="/images/President.png" alt="The Presidency" className="w-full h-full object-cover"/>
-                {/* Gradient overlay */}
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/70"></div>
-                {/* Text on top */}
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/70"></div>
               <h3 className="absolute inset-0 flex items-center justify-center text-white text-xl font-semibold text-center">The Presidency</h3>
             </div>
-
-
             
-            <div className="relative group cursor-pointer w-full max-w-[353px] mx-auto" style={{ height: '391.31px' }}>
-                <img src="/images/Ministers.png" alt="Ministers" className="w-full h-full object-cover"/>
-                {/* Gradient overlay */}
+            <div className="relative group cursor-pointer flex-shrink-0 mx-auto sm:mx-0" style={{ width: '353px', height: '391.31px', minWidth: '353px' }}>
+              <img src="/images/Ministers.png" alt="Ministers" className="w-full h-full object-cover"/>
               <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/70"></div>
-                {/* Text on top */}
-                <h3 className="absolute inset-0 flex items-center justify-center text-white text-xl font-semibold text-center">Ministers</h3>
-              </div>
+              <h3 className="absolute inset-0 flex items-center justify-center text-white text-xl font-semibold text-center">Ministers</h3>
+            </div>
             
-            
-            <div className="relative group cursor-pointer w-full max-w-[353px] mx-auto" style={{ height: '391.31px' }}>
-                <img src="/images/Governor.png" alt="Governors" className="w-full h-full object-cover"/>
-                    {/* Gradient overlay */}
+            <div className="relative group cursor-pointer flex-shrink-0 mx-auto sm:mx-0" style={{ width: '353px', height: '391.31px', minWidth: '353px' }}>
+              <img src="/images/Governor.png" alt="Governors" className="w-full h-full object-cover"/>
               <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/70"></div>
-                    {/* Text on top */}
-                  <h3 className="absolute inset-0 flex items-center justify-center text-white text-xl font-semibold text-center">Governors</h3>
-                </div>
+              <h3 className="absolute inset-0 flex items-center justify-center text-white text-xl font-semibold text-center">Governors</h3>
+            </div>
           </div>
         </div>
       </section>
@@ -199,8 +190,8 @@ const CurrentlyHomepage = () => {
             <a href="#" className="text-green-600 hover:text-black transition-colors no-underline text-sm sm:text-base">See all</a>
           </div>
           
-          <div className="flex flex-wrap justify-center gap-8">
-            <div style={{width: '353px', height: '523.57px'}} className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+          <div className="flex flex-col gap-8 sm:flex-row sm:overflow-x-scroll xl:flex-wrap xl:justify-center xl:overflow-x-visible" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none', WebkitOverflowScrolling: 'touch' }}>
+            <div className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow flex-shrink-0 mx-auto sm:mx-0" style={{width: '353px', height: '523.57px', minWidth: '353px'}}>
               <div style={{height: '330px', backgroundColor: '#d1d5db', width: '100%'}}></div>
               <div style={{height: '123.57px', padding: '16px'}}>
                 <h3 className="font-semibold text-lg mb-2 text-black">How Did the Biafra War Frame Today's Political Landscape</h3>
@@ -210,7 +201,7 @@ const CurrentlyHomepage = () => {
               </div>
             </div>
             
-            <div style={{width: '353px', height: '523.57px'}} className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+            <div className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow flex-shrink-0 mx-auto sm:mx-0" style={{width: '353px', height: '523.57px', minWidth: '353px'}}>
               <div style={{height: '330px', backgroundColor: '#d1d5db', width: '100%'}}></div>
               <div style={{height: '123.57px', padding: '16px'}}>
                 <h3 className="font-semibold text-lg mb-2 text-black">The Unspoken Horrors of the Transatlantic Slave Trade</h3>
@@ -220,7 +211,7 @@ const CurrentlyHomepage = () => {
               </div>
             </div>
             
-            <div style={{width: '353px', height: '523.57px'}} className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+            <div className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow flex-shrink-0 mx-auto sm:mx-0" style={{width: '353px', height: '523.57px', minWidth: '353px'}}>
               <div style={{height: '330px', backgroundColor: '#d1d5db', width: '100%'}}></div>
               <div style={{height: '123.57px', padding: '16px'}}>
                 <h3 className="font-semibold text-lg mb-2 text-black">The Hidden Agenda behind the Famous Organisation</h3>
@@ -235,35 +226,35 @@ const CurrentlyHomepage = () => {
 
       {/* Newsletter Signup */}
       <section className="bg-black py-16">
-  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div className="flex flex-col md:flex-row items-center justify-between">
-      <div className="flex-1 mb-8 md:mb-0">
-        <img 
-          src="/images/blk_bg_img.webp" 
-          alt="Political awareness illustration" 
-          className="w-full max-w-md mx-auto"
-        />
-      </div>
-      <div className="flex-1 text-white">
-        <h2 id="awareness-heading" className="text-2xl sm:text-3xl font-light mb-4">
-          Elevate your political awareness. <br></br>Get the full story, delivered straight to your inbox.
-        </h2>
-        <div className="flex flex-col space-y-2 max-w-md">
-          <input
-            type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            placeholder="Your email address"
-            className="px-4 py-3 text-black rounded focus:outline-none bg-white text-gray-500"
-          />
-          <button className="bg-green-600 px-6 py-3 rounded hover:bg-green-700 hover:border-white transition-colors">
-            Subscribe
-          </button>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col md:flex-row items-center justify-between">
+            <div className="flex-1 mb-8 md:mb-0">
+              <img 
+                src="/images/blk_bg_img.webp" 
+                alt="Political awareness illustration" 
+                className="w-full max-w-md mx-auto"
+              />
+            </div>
+            <div className="flex-1 text-white">
+              <h2 id="awareness-heading" className="text-2xl sm:text-3xl font-light mb-4">
+                Elevate your political awareness. <br></br>Get the full story, delivered straight to your inbox.
+              </h2>
+              <div className="flex flex-col space-y-2 max-w-md">
+                <input
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="Your email address"
+                  className="px-4 py-3 text-black rounded focus:outline-none bg-white text-gray-500"
+                />
+                <button className="bg-green-600 px-6 py-3 rounded hover:bg-green-700 hover:border-white transition-colors">
+                  Subscribe
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
+      </section>
 
       {/* Suggested For You */}
       <section className="bg-white py-16">
@@ -273,11 +264,11 @@ const CurrentlyHomepage = () => {
             <a href="#" className="text-green-600 hover:text-black transition-colors no-underline text-sm sm:text-base">See all</a>
           </div>
 
-          <div className="flex flex-wrap justify-center gap-8">
+          <div className="flex flex-col gap-8 sm:flex-row sm:overflow-x-scroll xl:flex-wrap xl:justify-center xl:overflow-x-visible" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none', WebkitOverflowScrolling: 'touch' }}>
             {/* Card 1 */}
             <div
-              className="bg-white border rounded-lg overflow-hidden hover:shadow-md transition-shadow flex flex-col"
-              style={{ width: '353px', height: '576.48px' }}
+              className="bg-white border rounded-lg overflow-hidden hover:shadow-md transition-shadow flex flex-col flex-shrink-0 mx-auto sm:mx-0"
+              style={{ width: '353px', height: '576.48px', minWidth: '353px' }}
             >
               <div className="bg-gray-200" style={{ height: '310px' }}></div>
               <div className="p-6 flex flex-col flex-1">
@@ -289,14 +280,14 @@ const CurrentlyHomepage = () => {
                 </p>
                 <button className="bg-black text-white w-40 py-2 text-sm rounded hover:bg-gray-800 hover:border-2 hover:border-green-500 transition-all mt-auto">
                   Read more
-                  </button>
+                </button>
               </div>
             </div>
 
             {/* Card 2 */}
             <div
-              className="bg-white border rounded-lg overflow-hidden hover:shadow-md transition-shadow flex flex-col"
-              style={{ width: '353px', height: '576.48px' }}
+              className="bg-white border rounded-lg overflow-hidden hover:shadow-md transition-shadow flex flex-col flex-shrink-0 mx-auto sm:mx-0"
+              style={{ width: '353px', height: '576.48px', minWidth: '353px' }}
             >
               <div className="bg-gray-200" style={{ height: '310px' }}></div>
               <div className="p-6 flex flex-col flex-1">
@@ -308,14 +299,14 @@ const CurrentlyHomepage = () => {
                 </p>
                 <button className="bg-black text-white w-40 py-2 text-sm rounded hover:bg-gray-800 hover:border-2 hover:border-green-500 transition-all mt-auto">
                   Read more
-                  </button>
+                </button>
               </div>
             </div>
 
             {/* Card 3 */}
             <div
-              className="bg-white border rounded-lg overflow-hidden hover:shadow-md transition-shadow flex flex-col"
-              style={{ width: '353px', height: '576.48px' }}
+              className="bg-white border rounded-lg overflow-hidden hover:shadow-md transition-shadow flex flex-col flex-shrink-0 mx-auto sm:mx-0"
+              style={{ width: '353px', height: '576.48px', minWidth: '353px' }}
             >
               <div className="bg-gray-200" style={{ height: '310px' }}></div>
               <div className="p-6 flex flex-col flex-1">
@@ -327,8 +318,7 @@ const CurrentlyHomepage = () => {
                 </p>
                 <button className="bg-black text-white w-40 py-2 text-sm rounded hover:bg-gray-800 hover:border-2 hover:border-green-500 transition-all mt-auto">
                   Read more
-                  </button>
-
+                </button>
               </div>
             </div>
           </div>
@@ -337,28 +327,28 @@ const CurrentlyHomepage = () => {
 
       {/* Join Us CTA */}
       <section className="bg-green-600 relative overflow-hidden">
-  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 relative z-10">
-    <div className="flex flex-col md:flex-row items-center justify-between text-white">
-      <div className="flex-1 mb-8 md:mb-0 md:pr-8">
-        <h2 className="text-2xl sm:text-3xl font-bold mb-4">
-          Join us in making a difference for Nigeria's future
-        </h2>
-        <p className="text-green-100 mb-6">
-          With your support, we can keep Nigerians informed.
-        </p>
-        <button className="bg-black text-white px-6 py-3 rounded hover:bg-gray-800 hover:border-white transition-colors">
-          Contact us
-        </button>
-      </div>
-      <div className="flex-1"></div>
-    </div>
-  </div>
-  <img 
-    src="/images/grn_bg_img.webp" 
-    alt="Subscribe Illustration" 
-    className="absolute right-0 top-0 bottom-0 h-full w-auto md:w-1/2 object-cover object-left"
-  />
-</section>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 relative z-10">
+          <div className="flex flex-col md:flex-row items-center justify-between text-white">
+            <div className="flex-1 mb-8 md:mb-0 md:pr-8">
+              <h2 className="text-2xl sm:text-3xl font-bold mb-4">
+                Join us in making a difference for Nigeria's future
+              </h2>
+              <p className="text-green-100 mb-6">
+                With your support, we can keep Nigerians informed.
+              </p>
+              <button className="bg-black text-white px-6 py-3 rounded hover:bg-gray-800 hover:border-white transition-colors">
+                Contact us
+              </button>
+            </div>
+            <div className="flex-1"></div>
+          </div>
+        </div>
+        <img 
+          src="/images/grn_bg_img.webp" 
+          alt="Subscribe Illustration" 
+          className="absolute right-0 top-0 bottom-0 h-full w-auto md:w-1/2 object-cover object-left"
+        />
+      </section>
 
       {/* Footer */}
       <footer className="bg-black text-white py-16">

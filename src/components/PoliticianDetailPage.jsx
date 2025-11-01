@@ -201,8 +201,8 @@ const PoliticianDetailPage = () => {
       {/* ================= TABS ================= */}
       <section className="bg-gray-50 py-6">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="overflow-x-auto scrollbar-hide">
-            <div className="flex gap-4 border-b border-gray-300 min-w-max md:min-w-0 md:flex-wrap">
+          <div className="overflow-x-auto" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none', WebkitOverflowScrolling: 'touch' }}>
+            <div className="flex gap-4 border-b border-gray-300 min-w-max">
               {[
                 { key: 'personal', label: 'Personal Background' },
                 { key: 'education', label: 'Education' },
@@ -228,11 +228,11 @@ const PoliticianDetailPage = () => {
 
       {/* hide-scrollbar styles */}
       <style>{`
-        .scrollbar-hide {
+        .overflow-x-auto {
           -ms-overflow-style: none;
           scrollbar-width: none;
         }
-        .scrollbar-hide::-webkit-scrollbar {
+        .overflow-x-auto::-webkit-scrollbar {
           display: none;
         }
       `}</style>
@@ -261,12 +261,12 @@ const PoliticianDetailPage = () => {
             Suggested For You
           </h2>
 
-          <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
+          <div className="flex flex-col gap-4 md:gap-8 sm:flex-row sm:overflow-x-scroll xl:grid xl:grid-cols-3 xl:overflow-x-visible" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none', WebkitOverflowScrolling: 'touch' }}>
             {suggestedPoliticians.map((p, idx) => (
               <div
                 key={idx}
-                className="bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow overflow-hidden"
-                style={{ width: '353px', height: '488px' }}
+                className="bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow overflow-hidden flex-shrink-0 mx-auto sm:mx-0"
+                style={{ width: '353px', height: '488px', minWidth: '353px' }}
               >
                 <div className="h-80 bg-gray-200"></div>
                 <div className="p-6 text-center">

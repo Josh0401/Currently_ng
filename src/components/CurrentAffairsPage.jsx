@@ -236,9 +236,9 @@ const CurrentAffairsPage = () => {
             <a onClick={() => navigate('/StoriesNigeriaPastPage')} className="text-green-600 hover:text-black transition-colors text-sm cursor-pointer">See all</a>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="flex flex-col gap-8 sm:flex-row sm:overflow-x-scroll xl:grid xl:grid-cols-3 xl:overflow-x-visible" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none', WebkitOverflowScrolling: 'touch' }}>
             {historicalStories.map((story, index) => (
-              <div key={index} className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+              <div key={index} className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow flex-shrink-0 mx-auto sm:mx-0" style={{ width: '353px', minWidth: '353px' }}>
                 <div className="h-48 bg-gray-200"></div>
                 <div className="p-6">
                   <h3 className="font-semibold text-lg mb-4 text-black">{story.title}</h3>
